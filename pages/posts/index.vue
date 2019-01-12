@@ -2,7 +2,7 @@
   <div>
   <div class="container w-full mx-auto">
       <h1>ALL POSTS</h1>
-      Example: 
+      Example:  SOMETHING HERE
    <div data-aos="fade-up" data-aos-duration="4000">
       <post />
     </div>
