@@ -1,17 +1,20 @@
 <template>
   <div>
     
-  <div class="container w-full mx-auto mt-32">
+  <div class="container w-full mx-auto mt-32 flex-col">
       <h1 class="text-white">ALL POSTS</h1>
       <p class="text-white">Example:  SOMETHING HERE</p>
+      
       <ul> 
+          <!-- <post v-for="post in posts" :key="post.slug" :title="post.title" :body="post.body" :path="post._path"/>
+            -->
          <li v-bind:key='post.uid' v-for='post in posts'>
             <div data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine">
                 <nuxt-link :to="post._path">{{ post.title }}</nuxt-link>
             </div>
-          </li>
+          </li>>
          
       </ul>
      </div> 
@@ -19,7 +22,7 @@
 </template>
 
 <script>
-//import Post from '~/components/Post.vue'
+import Post from '~/components/Post.vue'
 import axios from 'axios';
 export default {
   head: { 
@@ -27,32 +30,20 @@ export default {
   },
   
   data() {
-    // Using webpacks context to gather all files from a folder
-    const context = require.context('~/content/posts/', false, /\.json$/);
-    const posts = context.keys().map(key => ({
-      ...context(key),
-      _path: `/posts/${key.replace('.json', '').replace('./', '')}`
-    }));
-    console.log(posts);
-    return { posts };
+    return { 
+      posts: this.$store.state.posts
+    };
   },
 
   created(){
     this.allBlogPosts();
-   
   },
+  
   methods: {
      allBlogPosts() {
-       console.log('posts');
+       this.$store.commit('getPosts');
     }
-  },
-  computed: {
-   
-  },
-  components: {
-    //  Post
-  }
-  
+  } 
 }
 </script>
 
