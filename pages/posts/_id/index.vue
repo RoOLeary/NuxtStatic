@@ -13,24 +13,17 @@
 
 <script>
 export default {
-  head: function() {
+    async asyncData({ params, app, payload, route, store }) {
+    let post = await import("~/content/posts/" + params.slug + ".json");
+    console.log(post);
+   
+   },
+  head() {
     return {
-      title: `${this.post.title}`,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: this.post.description
-        }
-      ]
+      title: this.title + " | " + this.$store.state.siteInfo.sitename
     };
   },
-  asyncData: async ({ app, route, payload }) => {
-    return {
-      post: (await app.$content("/posts").get(route.path)) || payload
-    };
-  }
-};
+}
 </script>
 
 

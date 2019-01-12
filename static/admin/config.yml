@@ -10,7 +10,8 @@ collections:
     folder: "content/posts"
     slug: "{{slug}}"
     create: true
-    fields:
+    format: 'json'
+    fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
