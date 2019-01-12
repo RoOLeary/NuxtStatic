@@ -4,7 +4,9 @@
       <div class="container mx-auto postsindex mt-32 flex-col">
         <h1>{{ title }}</h1>
         <br>
-        <p><strong>{{ date }}</strong> - {{ author }}, {{ profile.address.city }}</p>
+        
+        <p><strong>{{ date | formatDate }}</strong><br>
+        Posted by {{ author }}, our man in {{ profile.address.city }}</p>
         <br>
         <p><img src="https://placehold.it/550x300" alt="placeholder" style="width: 760px"/></p>
         
@@ -21,6 +23,7 @@
       <div class="flex self-center mx-auto">
       <no-ssr>
         
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
       <social-sharing url="https://vuejs.org/"
         :title="title"
         :description="excerpt"

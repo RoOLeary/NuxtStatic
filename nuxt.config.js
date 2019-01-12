@@ -15,7 +15,6 @@ module.exports = {
     ],
     script:[
       { src: 'https://fonts.google.com/selection?selection.family=Montserrat:400,700'},
-      { src: '../dist/vue-social-sharing.js'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -44,7 +43,8 @@ module.exports = {
     { src: "~/plugins/aos", ssr: false },
     { src: "~/plugins/owl.js", ssr: false},
     { src: "~/plugins/vue-js-modal", ssr: false },
-    { src: "~/plugins/vue-social-sharing", ssr: false}
+    { src: "~/plugins/vue-social-sharing", ssr: false},
+    { src: "~/plugins/moment", ssr: false},
   ],
 
   env: {
@@ -55,7 +55,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-      '@nuxtjs/axios'
+      '@nuxtjs/axios',
+      '@nuxtjs/moment',
   ],
   /*
   ** Axios module configuration
