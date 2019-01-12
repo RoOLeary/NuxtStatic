@@ -9,7 +9,7 @@
             <div data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine">
-                <nuxt-link :to="{ path: '/posts/' + post.id, params: {id: post.id, title: post.title } }">{{ post.title }}</nuxt-link>
+                <nuxt-link :to="{ path: '/posts/' + post.slug, params: {id: post.id, title: post.title } }">{{ post.title }}</nuxt-link>
             </div>
           </li>
          
