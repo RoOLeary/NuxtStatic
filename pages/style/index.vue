@@ -116,35 +116,26 @@
         </div>
         <!-- Four columns -->
         
-       
-
-        <div class="flex flex-wrap py-2 px-4 mx-auto w-full">
-            <div class="max-w-md w-full lg:flex" v-for="post in posts" :key="post.slug">
-                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
-                </div>
-                <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                    <div class="mb-8">
-                    <p class="text-sm text-grey-dark flex items-center">
-                        <svg class="fill-current text-grey w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                        </svg>
-                        Members only
+       <div class="sm:flex flex-wrap md:flex-no-wrap px-2 py-2">
+            <div v-for="post in posts" :key="post.slug" class="sm:w-full md:w-1/3 rounded overflow-hidden shadow-lg m-2">
+                <img class="sm:w-full" src="http://www.fillmurray.com/800/490" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">{{ post.title }}</div>
+                    <p class="text-grey-darker text-base">
+                    {{ post.excerpt }}
                     </p>
-                    <div class="text-black font-bold text-xl mb-2">{{post.title}}</div>
-                    <p class="text-grey-darker text-base">{{ post.excerpt }}</p>
-                    </div>
-                    <div class="flex items-center">
-                    <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink">
-                    <div class="text-sm">
-                        <p class="text-black leading-none">Jonathan Reinink</p>
-                        <p class="text-grey-dark">Aug 18</p>
-                    </div>
-                    </div>
+                    <br>
+                    <nuxt-link :to="post._path" class="bg-red hover:bg-red-dark text-white py-2 px-2">Full Post</nuxt-link>
                 </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#code</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#nuxt</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#vuejs</span>
                 </div>
             </div>
         </div>
 
+        
         <div class="flex flex-row-reverse flex-wrap px-4">
             <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/2 mb-2 bg-grey p-8">1</div>
             <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey-light p-8">2</div>
