@@ -14,7 +14,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     script:[
-      { src: 'https://fonts.google.com/selection?selection.family=Montserrat:400,700'}
+      { src: 'https://fonts.google.com/selection?selection.family=Montserrat:400,700'},
+      { src: '/dist/vue-social-sharing.min.js'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -33,7 +34,7 @@ module.exports = {
     '~/assets/css/tailwind.css',
     '~/assets/main.css',
     'aos/dist/aos.css',
-    'vue-js-modal/dist/styles.css'
+    'vue-js-modal/dist/styles.css',
   ],
 
   /*
@@ -42,7 +43,8 @@ module.exports = {
   plugins: [
     { src: "~/plugins/aos", ssr: false },
     { src: "~/plugins/owl.js", ssr: false},
-    { src: "~/plugins/vue-js-modal", ssr: false }
+    { src: "~/plugins/vue-js-modal", ssr: false },
+    { src: "~/plugins/vue-social-sharing", ssr: false}
   ],
 
   env: {

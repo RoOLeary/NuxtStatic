@@ -16,6 +16,32 @@
             <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 p-8"></div> 
           </div>
       </div>
+
+      <social-sharing url="https://vuejs.org/"
+        :title="title"
+        :description="excerpt"
+        :quote="excerpt"
+        hashtags="vuejs,javascript,framework"
+        twitter-user="ro_oleary"
+        inline-template>
+          <div>
+            <network network="facebook">
+              <i class="fa fa-facebook"></i> Facebook
+            </network>
+            <network network="linkedin">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </network>
+            <network network="reddit">
+              <i class="fa fa-reddit"></i> Reddit
+            </network>
+            <network network="twitter">
+              <i class="fa fa-twitter"></i> Twitter
+            </network>
+            <network network="whatsapp">
+              <i class="fa fa-whatsapp"></i> Whatsapp
+            </network>
+        </div>
+      </social-sharing>
     </no-ssr>
   </div>
 </template>
