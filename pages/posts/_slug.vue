@@ -5,7 +5,7 @@
         <h1>{{ title }}</h1>
         <br>
         
-        <p><strong>{{ date | formatDate }}</strong><br>
+        <p><strong>{{ date | formatPostDate }}</strong><br>
         Posted by {{ author }}, our man in {{ profile.address.city }}</p>
         <br>
         <p><img src="https://placehold.it/550x300" alt="placeholder" style="width: 760px"/></p>
