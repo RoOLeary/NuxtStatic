@@ -29,12 +29,19 @@ export default {
     title: 'POSTS'
   },
   
-  data(){
-    return{
-      posts: []
+  data() {
+    return {};
+  },
+  created(){
+    this.allBlogPosts();
+    console.log(this.allBlogPosts());
+  },
+  methods: {},
+  computed: {
+    allBlogPosts() {
+      return this.$store.state.blogPosts;
     }
   },
-  
   components: {
     Post
   }
