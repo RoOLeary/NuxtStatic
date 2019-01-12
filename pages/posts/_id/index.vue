@@ -3,7 +3,7 @@
     <div class="single-post">
         <h1>{{ post.title }}</h1>
         <p>id: {{ post.id }}</p>
-        <p>{{ post.body }}</p>
+        <p v-html="post.body" />
         {{ this.$route.params.title }}
         <nuxt-link to='/posts'>Back to Posts</nuxt-link>
     </div>
@@ -12,33 +12,25 @@
 
 
 <script>
-
-import axios from 'axios';
-export default{
-  head: { 
-    title: `SINGLE`
+export default {
+  head: function() {
+    return {
+      title: `${this.post.title}`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.post.description
+        }
+      ]
+    };
   },
-  
-  data(){
-    return{
-      post: []
-    }
-  }, 
-  created () {
-      this.loadPost();
-  },
-
-  methods: {
-    loadPost(){
-      console.log('g go gadget');
-      axios.get(`https://jsonplaceholder.typicode.com/posts/` + this.$route.params.id )
-        .then(response => {
-            this.post = response.data
-            //console.log(this.post);
-        })
-    }
+  asyncData: async ({ app, route, payload }) => {
+    return {
+      post: (await app.$content("/posts").get(route.path)) || payload
+    };
   }
-}
+};
 </script>
 
 

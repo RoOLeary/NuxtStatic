@@ -53,7 +53,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+      '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
@@ -62,6 +62,19 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  nuxtent: {
+    content: [
+      [
+        'posts',
+        {
+          page: '/posts/_id',
+          permalink: '/posts/:id',
+          generate: ['get', 'getAll'],
+          isPost: false,
+        },
+      ],
+    ],
+  },
   // router: {
   //   base: '/NuxtStatic/'
   // },
