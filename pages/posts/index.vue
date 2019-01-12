@@ -5,14 +5,20 @@
       <p class="text-white">Example:  SOMETHING HERE</p>
    
       <ul> 
-        
-          <li v-bind:key='post.uid' v-for='post in posts'>
+          <li 
+            v-for="post in posts" 
+            :key="post.slug">
+            <nuxt-link :to="post._path">
+              {{ post.title }}
+            </nuxt-link>
+          </li>
+          <!-- <li v-bind:key='post.uid' v-for='post in posts'>
             <div data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine">
                 <nuxt-link :to="{ path: '/posts/' + post.id, params: {id: post.id, title: post.title } }">{{ post.title }}</nuxt-link>
             </div>
-          </li>
+          </li> -->
         
       </ul>
      </div> 
@@ -28,15 +34,23 @@ export default {
   },
   
   data() {
-    return {};
+    // Using webpacks context to gather all files from a folder
+    const context = require.context('~/content/blog/posts/', false, /\.json$/);
+    const posts = context.keys().map(key => ({
+      ...context(key),
+      _path: `/blog/${key.replace('.json', '').replace('./', '')}`
+    }));
+    console.log(posts);
+    return { posts };
   },
+
   created(){
     this.allBlogPosts();
    
   },
   methods: {
      allBlogPosts() {
-      console.log('posts');
+       console.log('posts');
     }
   },
   computed: {
