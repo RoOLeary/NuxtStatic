@@ -1,7 +1,7 @@
 <template>
   <div>
     
-  <div class="container w-full mx-auto mt-32 flex-col">
+  <div class="container w-full mx-auto mt-24 flex-col">
       <h1 class="text-white">ALL POSTS</h1>
       <p class="text-white">Example:  SOMETHING HERE</p>
       
@@ -9,12 +9,9 @@
           <!-- <post v-for="post in posts" :key="post.slug" :title="post.title" :body="post.body" :path="post._path"/>
             -->
          <li v-bind:key='post.uid' v-for='post in posts'>
-            <div data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
+            
                 <nuxt-link :to="post._path">{{ post.title }}</nuxt-link>
-            </div>
-          </li>>
+         </li>
          
       </ul>
      </div> 
@@ -35,7 +32,7 @@ export default {
     };
   },
 
-  created(){
+  createde(){
     this.allBlogPosts();
   },
   

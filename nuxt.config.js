@@ -15,7 +15,6 @@ module.exports = {
     ],
     script:[
       { src: 'https://fonts.google.com/selection?selection.family=Montserrat:400,700'},
-      { src: '/dist/vue-social-sharing.min.js'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
