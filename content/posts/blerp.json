@@ -6,8 +6,10 @@
   "author": "Danger Ro",
   "profile": {
     "public": true,
+    "name": "Ronan O'Leary",
     "birthdate": "01/12/2019",
     "address": {
+      "street": "20 Donnybrook Court",
       "city": "Dublin"
     }
   }
