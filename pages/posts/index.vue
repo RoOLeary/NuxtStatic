@@ -1,12 +1,11 @@
 <template>
   <div>
-  <div class="container w-full mx-auto">
+    
+  <div class="container w-full mx-auto mt-32">
       <h1 class="text-white">ALL POSTS</h1>
       <p class="text-white">Example:  SOMETHING HERE</p>
-      
       <ul> 
           <post v-for="post in posts" :key="post.slug" :title="post.title" :body="post.body" :path="post._path"/>
-           
           <!-- <li v-bind:key='post.uid' v-for='post in posts'>
             <div data-aos="fade-right"
               data-aos-offset="300"

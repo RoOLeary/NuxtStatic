@@ -1,15 +1,15 @@
 <template>
   <div>
     <no-ssr>
-      <div class="container mx-auto postsindex mt-32">
-        <h1 class="text-5xl">{{ title }}</h1>
+      <div class="container mx-auto postsindex mt-32 flex-col">
+        <h1>{{ title }}</h1>
         <br>
-        <p><img src="https://placehold.it/550x350" alt="placeholder" style="width: 760px"/></p>
-        <br><small>{{ date }}</small>
-        <div class="flex flex-col flex-wrap">
+        <p><img src="https://placehold.it/550x300" alt="placeholder" style="width: 760px"/></p>
+        <p><strong>{{ date }}</strong></p>
+        <div class="flex self-center mx-auto">
             <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 py-8"></div> 
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mb-2 p-8 text-left">
-                <p class="leading-normal">{{ body }}</p>
+                <p class="leading-loose">{{ body }}</p>
                 <br>
                 <nuxt-link to='/posts' class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded no-underline">Back to Posts</nuxt-link>  
             </div> 
