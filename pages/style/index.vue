@@ -41,7 +41,7 @@
                     
                     
                     <div v-for="post in posts" :key="post.slug" @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
-                        <img src="~/assets/images/tnw.jpg">
+                        <img :src="post.thumbnail">
                         <p>{{ post.title }}</p>
                     </div>
                 
@@ -158,13 +158,13 @@ export default {
   
     data() {
        // Using webpacks context to gather all files from a folder
-        const context = require.context('~/content/portfolio/', false, /\.json$/);
-        const posts = context.keys().map(key => ({
-        ...context(key),
-        _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
-        }));
-        console.log(posts);
-        return { posts };
+    const context = require.context('~/content/portfolio/', false, /\.json$/);
+    const posts = context.keys().map(key => ({
+      ...context(key),
+      _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
+    }));
+    console.log(posts);
+    return { posts };
     },
 
     computed: {
