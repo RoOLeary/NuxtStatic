@@ -18,7 +18,9 @@
             <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 p-8"></div> 
           </div>
       </div>
- <no-ssr>
+      <div class="flex self-center mx-auto">
+      <no-ssr>
+        
       <social-sharing url="https://vuejs.org/"
         :title="title"
         :description="excerpt"
@@ -45,6 +47,7 @@
         </div>
       </social-sharing>
     </no-ssr>
+    </div>
   </div>
 </template>
 
