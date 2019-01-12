@@ -2,7 +2,7 @@
   <div>
     
   <div class="container w-full mx-auto mt-24 flex-col">
-      <h1 class="text-white">ALL POSTS</h1>
+      <h1 class="text-white">ALL {{ title }}</h1>
       <p class="text-white">Example:  SOMETHING HERE</p>
       
       <ul> 
@@ -28,6 +28,7 @@ export default {
   
   data() {
     return { 
+      title: 'POSTS',
       posts: this.$store.state.posts
     };
   },

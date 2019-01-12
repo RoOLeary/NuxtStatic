@@ -40,7 +40,7 @@
                 <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:6,nav:true}}">
                     
                     
-                    <div v-for="post in posts" :key="post.slug" @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
+                    <div v-for="post in portfolio" :key="post.slug" @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
                         <img :src="post.thumbnail">
                         <p>{{ post.title }}</p>
                     </div>
@@ -115,18 +115,34 @@
             </div>
         </div>
         <!-- Four columns -->
-        <div class="flex flex-wrap pt-2 px-4">
-            <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 bg-grey h-32 p-32"></div>
-            <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 bg-grey-light h-32 p-32"></div>
-            <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 bg-grey h-32 p-32"></div>      
-        </div>
-
+        
        
 
-        <div class="flex flex-wrap py-2 px-4">
-            <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 bg-grey h-32 p-32"></div>
-            <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 bg-grey-light h-32 p-32"></div>
-            <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 bg-grey h-32 p-32"></div>
+        <div class="flex flex-wrap py-2 px-4 mx-auto w-full">
+            <div class="max-w-md w-full lg:flex" v-for="post in posts" :key="post.slug">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="mb-8">
+                    <p class="text-sm text-grey-dark flex items-center">
+                        <svg class="fill-current text-grey w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                        </svg>
+                        Members only
+                    </p>
+                    <div class="text-black font-bold text-xl mb-2">{{post.title}}</div>
+                    <p class="text-grey-darker text-base">{{ post.excerpt }}</p>
+                    </div>
+                    <div class="flex items-center">
+                    <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink">
+                    <div class="text-sm">
+                        <p class="text-black leading-none">Jonathan Reinink</p>
+                        <p class="text-grey-dark">Aug 18</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
 
         <div class="flex flex-row-reverse flex-wrap px-4">
@@ -158,13 +174,28 @@ export default {
   
     data() {
        // Using webpacks context to gather all files from a folder
-    const context = require.context('~/content/portfolio/', false, /\.json$/);
-    const posts = context.keys().map(key => ({
-      ...context(key),
-      _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
-    }));
-    console.log(posts);
-    return { posts };
+        const context = require.context('~/content/portfolio/', false, /\.json$/);
+        const portfolio = context.keys().map(key => ({
+        ...context(key),
+        _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
+        }));
+        console.log(portfolio);
+
+        return { 
+            portfolio,
+            title: 'POSTS',
+            posts: this.$store.state.posts 
+        }
+    },
+
+    created(){
+        this.allBlogPosts();
+    },
+    
+    methods: {
+        allBlogPosts() {
+        this.$store.commit('getPosts');
+        }
     },
 
     computed: {
