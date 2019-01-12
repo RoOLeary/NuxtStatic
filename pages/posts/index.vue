@@ -34,13 +34,15 @@ export default {
   },
   created(){
     this.allBlogPosts();
-    console.log(this.allBlogPosts());
+   
   },
-  methods: {},
-  computed: {
-    allBlogPosts() {
-      return this.$store.state.blogPosts;
+  methods: {
+     allBlogPosts() {
+      console.log('posts');
     }
+  },
+  computed: {
+   
   },
   components: {
     Post

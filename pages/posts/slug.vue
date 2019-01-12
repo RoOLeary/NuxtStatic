@@ -13,17 +13,17 @@
 
 <script>
 export default {
-    async asyncData({ params, app, payload, route, store }) {
-    let post = await import("~/content/posts/" + params.slug + ".json");
-    console.log(post);
-   
-   },
-  head() {
-    return {
-      title: this.title + " | " + this.$store.state.siteInfo.sitename
-    };
-  },
-}
+  async asyncData({ params }) {
+    // const postPromise = process.BROWSER_BUILD
+    //   ? import('~/content/blog/posts/' + params.slug + '.json')
+    //   : Promise.resolve(
+    //       require('~/content/blog/posts/' + params.slug + '.json')
+    //     );
+    let post = await import('~/content/posts/' + params.slug + '.json');
+    console.log(post)
+    return post;
+  }
+};
 </script>
 
 
