@@ -33,21 +33,8 @@ export default {
     return{
       posts: []
     }
-  }, 
-  created () {
-      this.awaken();
   },
-
-  methods: {
-    awaken(){
-      console.log('go');
-      axios.get(`https://jsonplaceholder.typicode.com/posts`)
-        .then(response => {
-            this.posts = response.data
-            console.log(this.posts);
-        })
-    }
-  },
+  
   components: {
     Post
   }
