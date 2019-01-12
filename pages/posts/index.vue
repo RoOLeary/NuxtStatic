@@ -1,17 +1,12 @@
 <template>
   <div>
-  <div class="container w-full mx-auto mt-12">
+  <div class="container w-full mx-auto">
       <h1 class="text-white">ALL POSTS</h1>
       <p class="text-white">Example:  SOMETHING HERE</p>
-   
+      
       <ul> 
-          <li 
-            v-for="post in posts" 
-            :key="post.slug">
-            <nuxt-link :to="post._path">
-              {{ post.title }}
-            </nuxt-link>
-          </li>
+          <post v-for="post in posts" :key="post.slug" :title="post.title" :body="post.body" :path="post._path"/>
+           
           <!-- <li v-bind:key='post.uid' v-for='post in posts'>
             <div data-aos="fade-right"
               data-aos-offset="300"
@@ -26,7 +21,7 @@
 </template>
 
 <script>
-//import Post from '~/components/Post.vue'
+import Post from '~/components/Post.vue'
 import axios from 'axios';
 export default {
   head: { 
@@ -57,7 +52,7 @@ export default {
    
   },
   components: {
-    //  Post
+    Post
   }
   
 }

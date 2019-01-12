@@ -38,19 +38,13 @@
         <div data-aos="fade-up" data-aos-duration="4000">
              <no-ssr>
                 <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:6,nav:true}}">
-                    <div @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
+                    
+                    
+                    <div v-for="post in posts" :key="post.slug" @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
                         <img src="~/assets/images/tnw.jpg">
+                        <p>{{ post.title }}</p>
                     </div>
-                    <img src="~/assets/images/trgrmvmnt.jpg">
-
-                    <img src="~/assets/images/runrep.jpg">
-
-                    <img src="https://placeimg.com/200/150/any?4">
-
-                    <img src="https://placeimg.com/200/150/any?3">
-
-                    <img src="https://placeimg.com/200/150/any?4">
-
+                
                 </carousel>
              </no-ssr>
         </div>
@@ -162,10 +156,15 @@ export default {
         title: 'Style page'
     },
   
-    data: () => {
-        return {
-        
-        };
+    data() {
+        // Using webpacks context to gather all files from a folder
+        const context = require.context('~/content/posts/', false, /\.json$/);
+        const posts = context.keys().map(key => ({
+        ...context(key),
+        _path: `/posts/${key.replace('.json', '').replace('./', '')}`
+        }));
+        console.log(posts);
+        return { posts };
     },
 
     computed: {
