@@ -1,11 +1,9 @@
 <template>
   <div>
   <div class="container w-full mx-auto">
-      <h1>ALL POSTS</h1>
-      Example:  SOMETHING HERE
-   <div data-aos="fade-up" data-aos-duration="4000">
-      <post />
-    </div>
+      <h1 class="text-white">ALL POSTS</h1>
+      <p class="text-white">Example:  SOMETHING HERE</p>
+   
       <ul> 
         
           <li v-bind:key='post.uid' v-for='post in posts'>
@@ -22,7 +20,7 @@
 </template>
 
 <script>
-import Post from '~/components/Post.vue'
+//import Post from '~/components/Post.vue'
 import axios from 'axios';
 export default {
   head: { 
@@ -45,7 +43,7 @@ export default {
    
   },
   components: {
-    Post
+    //  Post
   }
   
 }
