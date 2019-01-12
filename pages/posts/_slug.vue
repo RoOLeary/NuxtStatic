@@ -5,7 +5,7 @@
         <h1>{{ title }}</h1>
         <br>
         <p><img src="https://placehold.it/550x300" alt="placeholder" style="width: 760px"/></p>
-        <p><strong>{{ date }}</strong></p>
+        <p><strong>{{ date }}</strong> - {{ author }}, {{ profile.address.city }}</p>
         <div class="flex self-center mx-auto">
             <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 py-8"></div> 
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mb-2 p-8 text-left">
