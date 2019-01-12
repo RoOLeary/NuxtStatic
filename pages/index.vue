@@ -69,7 +69,7 @@
             Adaptive
             </button>
         </div>
-         <div class="flex flex-col sm:flex-row w-full px-4">
+         <div class="flex flex-col sm:flex-row w-full">
              
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-12 text-white text-left">
                 <div data-aos="fade-right" data-aos-duration="4000">  
@@ -115,9 +115,11 @@
             </div>
         </div>
         <!-- Four columns -->
-        
-       <div class="sm:flex flex-wrap md:flex-no-wrap px-2 py-2">
-            <div v-for="post in posts" :key="post.slug" class="sm:w-full md:w-1/3 rounded overflow-hidden shadow-lg m-2">
+        <div data-aos="fade-down" data-aos-duration="4000">
+            <h1 class="pt-8 pb-2 px-4 text-5xl">LATEST POSTS</h1>
+        </div>
+        <div class="sm:flex flex-wrap md:flex-no-wrap px-2 py-2">
+            <div v-for="post, index in posts" :key="post.slug" v-if="index < 3" class="sm:w-full md:w-1/3 rounded overflow-hidden shadow-lg m-2">
                 <img class="sm:w-full" src="http://www.fillmurray.com/800/490" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{ post.title }}</div>
