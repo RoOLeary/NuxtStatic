@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="single-post">
+    <div class="single-post text-center">
         <h1>{{ title }}</h1>
         <p><strong>{{ date }}</strong></p>
         <p>{{ body }}</p>
@@ -24,7 +24,7 @@ export default {
 <style scoped>
 
   .container{
-      background: darkred;
+      background: black;
       min-height: 100vh;
       min-width: 100vw;
   }
