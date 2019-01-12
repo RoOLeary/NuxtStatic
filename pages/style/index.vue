@@ -3,7 +3,7 @@
         <div class="container w-full mx-auto header">
             <div data-aos="fade-up" data-aos-duration="4000">  
                 <h1 class="text-white pt-16 pl-4 pb-4 text-5xl ">
-                    BLORTY McBLORTERSON
+                    JOLLY CARSON
                 </h1>
                 <h2 class="text-white pl-5 pb-4 text-2xl ">
                     BAD-ASS WEB DEVELOPER
