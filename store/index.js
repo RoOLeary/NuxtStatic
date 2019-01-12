@@ -42,9 +42,6 @@ const createStore = () => {
           ...context(key),
           _path: `/posts/${key.replace('.json', '').replace('./', '')}`
         }));
-        console.log(state.posts);
-        console.log(posts);
-
         state.posts = posts
       }
     }
