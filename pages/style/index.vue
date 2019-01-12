@@ -157,11 +157,11 @@ export default {
     },
   
     data() {
-        // Using webpacks context to gather all files from a folder
-        const context = require.context('~/content/posts/', false, /\.json$/);
+       // Using webpacks context to gather all files from a folder
+        const context = require.context('~/content/portfolio/', false, /\.json$/);
         const posts = context.keys().map(key => ({
         ...context(key),
-        _path: `/posts/${key.replace('.json', '').replace('./', '')}`
+        _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
         }));
         console.log(posts);
         return { posts };
