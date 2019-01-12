@@ -1,5 +1,13 @@
 {
-    "title": "dfasdfasdf",
-    "date": "2019-01-12T02:20:11.030Z",
-    "body": "sasaaass"
+  "title": "dfasdfasdf",
+  "date": "2019-01-12T02:20:11.030Z",
+  "excerpt": "They're robots Morty! It's okay to shoot them! They're just robots!",
+  "body": "sasaaass",
+  "author": "DngrRo",
+  "profile": {
+    "birthdate": "01/12/2019",
+    "address": {
+      "city": "Cork"
+    }
+  }
 }
