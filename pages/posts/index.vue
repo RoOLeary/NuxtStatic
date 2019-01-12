@@ -1,6 +1,6 @@
 <template>
   <div>
-  <div class="container w-full mx-auto">
+  <div class="container w-full mx-auto mt-12">
       <h1 class="text-white">ALL POSTS</h1>
       <p class="text-white">Example:  SOMETHING HERE</p>
    
