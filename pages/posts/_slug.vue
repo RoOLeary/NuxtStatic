@@ -8,7 +8,7 @@
         <p><strong>{{ date | formatPostDate }}</strong><br>
         Posted by {{ author }}, our man in {{ profile.address.city }}</p>
         <br>
-        <p><img src="https://placehold.it/550x300" alt="placeholder" style="width: 760px"/></p>
+        <p><img src="https://www.fillmurray.com/550/300" alt="placeholder" style="width: 760px"/></p>
         
         <div class="flex self-center mx-auto">
             <div class="shergar md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 py-8"></div> 
