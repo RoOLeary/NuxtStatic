@@ -83,4 +83,9 @@ export default {
 	padding-bottom: 1.5rem;
 	padding-left: 1.5rem;
 }
+
+.nuxt-link-exact-active{
+    color: darkred;
+    font-weight: bold;
+}
 </style>
