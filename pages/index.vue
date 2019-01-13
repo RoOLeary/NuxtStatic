@@ -159,25 +159,32 @@
         <div class="flex flex-wrap">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark px-16 py-16 ">
                 <div data-aos="fade-right" data-aos-duration="4000">  
-                    <h3 class="text-white text-3xl">Heard enough? Wanna grab a coffee?</h3>
+                    <h3 class="text-white text-3xl">Heard enough?</h3>
                     <br>
-                    <p class="text-white tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
+                    <h3 class="text-white text-3xl">Wanna grab a coffee?</h3>
+                    <br>
+                    <p class="text-white text-2xl tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
                 </div>
             </div>
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-8 pt-16">
-                <p class="text-white text-1xl">Leave your email and a brief hint as to the subject, and I may or may not get back to you</p>
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                        <label>Email: </label>
-                        <input type="text" name="name" />
-                    </p>
-                    <p>
-                        <label>Message: </label>
-                        <textarea name="message"></textarea>
-                    </p>
-                    <p>
-                        <button type=”submit”>Send</button>
-                    </p>
+                <p class="text-white text-1xl">Leave your email and a brief hint as to the subject, and I may or may not get back to you.
+                    <stromg>ALL</stromg> fields are required, and I'll never share your email with anyone. Swearsies.</p>
+                </p>
+                <br>
+                <form class="mb-6" name="contact" method="POST" data-netlify="true">
+                    <div class="flex flex-col mb-4">
+                        <label class="mb-2 text-white" for="name">Your Name *</label>
+                        <input class="border py-2 px-3 text-grey-darkest" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label class="mb-2 text-white" for="email">Email *</label>
+                        <input class="border py-2 px-3 text-grey-darkest" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="flex flex-col mb-6">
+                        <label class="mb-2 text-white" for="message">Message *</label>
+                        <textarea class="border py-2 px-3 text-grey-darkest"  name="message" id="message" placeholder="What have you got in mind?" required></textarea>
+                    </div>
+                    <button class="block bg-red-dark hover:bg-red text-white uppercase  p-4 rounded" type="submit">GET IN TOUCH</button>
                 </form>
             </div>
         </div>
