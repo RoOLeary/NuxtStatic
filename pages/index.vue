@@ -134,7 +134,7 @@
         </div>
         <!-- Four columns -->
         <div data-aos="fade-down" data-aos-duration="4000">
-            <h1 class="pt-12 pb-4 px-4 text-5xl text-center">LATEST POSTS</h1>
+            <h1 class="pt-12 pb-4 px-4 text-5xl text-center">MUSINGS & MEANDERINGS</h1>
         </div>
         <div class="sm:flex flex-wrap md:flex-no-wrap px-2 py-2">
             <div v-for="post, index in posts" :key="post.slug" v-if="index < 3" class="sm:w-full md:w-1/3 rounded overflow-hidden shadow-lg m-2">
