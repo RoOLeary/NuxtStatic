@@ -175,7 +175,6 @@
                         <label>Message: </label>
                         <textarea name="message"></textarea>
                     </p>
-                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <button type=”submit”>Send</button>
                     </p>
