@@ -11,7 +11,7 @@
         <p><img src="https://placehold.it/550x300" alt="placeholder" style="width: 760px"/></p>
         
         <div class="flex self-center mx-auto">
-            <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 py-8"></div> 
+            <div class="shergar md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 py-8"></div> 
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mb-2 p-8 text-left">
                 <p class="leading-loose">{{ body }}</p>
                 <br>
@@ -43,7 +43,7 @@
                   </social-sharing>
               </no-ssr>
             </div> 
-            <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 p-8"></div> 
+            <div class="shergar md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 p-8"></div> 
         </div>  
     </div>
   </div>
@@ -62,7 +62,11 @@ export default {
 
 
 <style scoped>
-
+  @media all and (max-width: 960px){
+    .shergar{
+      display: none;
+    }
+  }
   .container.postindex{
       background: #fff;
       min-height: 100vh;
