@@ -6,7 +6,7 @@
                     DANGER <span class="text-red">RO</span>
                 </h1>
                 <h2 class="text-white pl-5 pb-4 text-2xl ">
-                    BUILDER OF THINGS DIGITAL
+                    BUILDER OF INTERNETS, WEAVER OF THINGS DIGITAL
                 </h2>
                 <br>
                 <button @click="$store.commit('gethigh')" class="bg-red hover:bg-red-dark text-white py-4 px-4">LEARN MORE</button>
