@@ -19,7 +19,7 @@
         <div class="flex mt-2 mb-2 py-2 px-4">
             <div class="w-full bg-white h-auto px-4 pt-16 pb-2">
                 <div data-aos="fade-up" data-aos-duration="4000">  
-                    <h1 class="text-black text-center pl-4 pb-4 text-4xl ">
+                    <h1 class="text-black text-center pl-4 pb-4 text-5xl ">
                         PLEASE ALLOW ME TO INT<span class="text-red">RO</span>DUCE MYSELF...
                     </h1>
                     <p class="text-black text-center pl-5 pb-4 text-2xl px-16 leading-loose">
