@@ -138,14 +138,16 @@
         </div>
 
         
-        <div class="flex flex-wrap px-4">
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-2 bg-grey p-8">
-                <h3>Heard Enough?</h3>
-                <h5>Wanna grab a coffee and a maybe a cheeky number?</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum eligendi iste sit, cumque totam modi dignissimos hic esse. Beatae cumque labore quam facilis in, libero odio quaerat dolorem eligendi.</p>
+        <div class="flex flex-wrap">
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red p-8">
+                <div data-aos="fade-right" data-aos-duration="4000">  
+                    <h3 class="text-white text-3xl">Heard Enough?</h3>
+                    <h5 class="text-white text-1xl">Wanna grab a coffee and a maybe a cheeky number?</h5>
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum eligendi iste sit, cumque totam modi dignissimos hic esse. Beatae cumque labore quam facilis in, libero odio quaerat dolorem eligendi.</p>
+                </div>
             </div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-2 bg-grey-light p-8">2</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-2 bg-grey-light p-8">4</div> 
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8">2</div>
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8">4</div> 
         </div>
     </div>
     </section>
