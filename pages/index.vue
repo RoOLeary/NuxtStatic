@@ -174,15 +174,15 @@
                 <form name="contact" method="POST" data-netlify="true">
                     <div class="flex flex-col mb-4">
                         <label class="mb-2 text-white" for="name">Your Name *</label>
-                        <input class="border py-2 px-3 text-grey-darkest" type="text" name="name" id="name" required>
+                        <input class="border py-2 px-3" type="text" name="name" id="fullname" required />
                     </div>
                     <div class="flex flex-col mb-4">
                         <label class="mb-2 text-white" for="email">Email *</label>
-                        <input class="border py-2 px-3 text-grey-darkest" type="email" name="email" id="email" required>
+                        <input class="border py-2 px-3" type="email" name="email" id="email" required />
                     </div>
                     <div class="flex flex-col mb-6">
                         <label class="mb-2 text-white" for="message">Message *</label>
-                        <textarea class="border py-2 px-3 text-grey-darkest"  name="message" id="message" placeholder="What have you got in mind?" required></textarea>
+                        <textarea class="border py-2 px-3"  name="message" id="message" placeholder="What have you got in mind?" required></textarea>
                     </div>
                     <button class="block bg-red-dark hover:bg-red text-white uppercase  p-4 rounded" type="submit">GET IN TOUCH</button>
                 </form>
