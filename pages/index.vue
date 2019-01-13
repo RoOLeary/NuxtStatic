@@ -36,7 +36,7 @@
         <!-- Two columns -->
        
         <div data-aos="fade-down" data-aos-duration="4000">
-            <h1 class="pt-8 pb-2 px-4 text-5xl text-center">BITS AND PIECES...</h1>
+            <h1 class="pt-8 pb-2 px-4 text-5xl text-center">BITS & PIECES...</h1>
             <h3 class="pt-8 pb-2 px-4 text-2xl text-center">Here are some of the organisations for whom I have worked</h3>
         </div>
 
