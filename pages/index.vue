@@ -23,7 +23,7 @@
                         PLEASE ALLOW ME TO INT<span class="text-red">RO</span>DUCE MYSELF...
                     </h1>
                     <p class="text-black text-center pl-5 pb-4 text-2xl px-16 leading-loose">
-                        ...I'm a multidisciplined web developer with 9 years (and counting...) professional experience.<br>
+                        ...I'm a multi disciplined web developer with 9 years (and counting...) professional experience.<br>
                         In actuality, I'm kind of like a web-dev "jack of <i>many</i> trades" - in that I know a little bit about loads of stuff, but my specialities are mainly in the area 
                         of CMS (i.e. PHP - Craft, WP, Laravel, Netlify) and javascript application development with Vue and occasionally React.
                     <p class="text-black text-center pl-5 pb-4 text-2xl px-16 leading-loose">
