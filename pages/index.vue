@@ -173,15 +173,11 @@
                 <br>
                 <form name="contact" method="POST" data-netlify="true">
                     <div class="flex flex-col mb-4">
-                        <label class="mb-2 text-white" for="name">Your Name *</label>
-                        <input type="text" name="name" required />
-                    </div>
-                    <div class="flex flex-col mb-4">
-                        <label class="mb-2 text-white" for="email">Email *</label>
+                        <label class="mb-2 text-white">Email *</label>
                         <input type="email" name="email" required />
                     </div>
                     <div class="flex flex-col mb-6">
-                        <label class="mb-2 text-white" for="message">Message *</label>
+                        <label class="mb-2 text-white">Message *</label>
                         <textarea  name="message" placeholder="What have you got in mind?" required></textarea>
                     </div>
                     <button class="block bg-red-dark hover:bg-red text-white uppercase  p-4 rounded" type="submit">GET IN TOUCH</button>
