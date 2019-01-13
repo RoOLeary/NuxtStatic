@@ -164,19 +164,18 @@
                     <p class="text-white tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
                 </div>
             </div>
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-8">
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                        <label>Email: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                        <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <div data-netlify-recaptcha="true"></div>
-                    <p>
-                        <button type=”submit”>Send</button>
-                    </p>
-                </form>
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-8 pt-16">
+                <div data-aos="fade-left" data-aos-duration="4000">  
+                    <p class="text-white tracking-wide leading-tight">Cool, so leave your email here, and I'll reply to you with a simple contact form.</p>
+                    <form class="w-full"name="contact" method="POST" data-netlify="true">
+                        <div class="flex items-center border-b border-b-2 border-red-dark py-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your Email Here..." aria-label="Full name">
+                            <button class="flex-no-shrink bg-red hover:bg-red-dark border-red hover:border-red-dark text-sm border-4 text-white py-1 px-2 rounded" type="button">
+                            Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
