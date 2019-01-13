@@ -167,30 +167,9 @@
                 </div>
             </div>
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-8 pt-16">
-                <p class="text-white text-1xl">Leave your email and a brief hint as to the subject, and I may or may not get back to you.
+                <!-- <p class="text-white text-1xl">Leave your email and a brief hint as to the subject, and I may or may not get back to you.
                     <stromg>ALL</stromg> fields are required, and I'll never share your email with anyone. Swearsies.</p>
-                </p>
-                <br>
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                        <label>Your Name: <input type="text" name="name" /></label>   
-                    </p>
-                    <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Your Role: <select name="role[]" multiple>
-                            <option value="leader">Leader</option>
-                            <option value="follower">Follower</option>
-                        </select></label>
-                    </p>
-                    <p>
-                        <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                        <button class="block bg-red-dark hover:bg-red text-white uppercase  p-4 rounded" type="submit">Send</button>
-                    </p>
-                </form>
+                </p> -->
             </div>
         </div>
     </div>
