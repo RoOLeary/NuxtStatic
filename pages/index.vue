@@ -166,11 +166,10 @@
                     <p class="text-white text-2xl tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
                 </div>
             </div>
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-8 pt-16">
-                <!-- <p class="text-white text-1xl">Leave your email and a brief hint as to the subject, and I may or may not get back to you.
-                    <stromg>ALL</stromg> fields are required, and I'll never share your email with anyone. Swearsies.</p>
-                </p> -->
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8 pt-16" style="background-image: url('https://ronan-oleary.com/wp/wp-content/uploads/2019/01/img-ronan.jpg'); background-size: cover; background-position: center center;">
+                <img src="/assets/images/img-ronan.jpg" />
             </div>
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-red-dark p-8">2</div>
         </div>
     </div>
     </section>
