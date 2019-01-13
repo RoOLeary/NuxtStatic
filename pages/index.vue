@@ -164,8 +164,20 @@
                     <p class="text-white tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
                 </div>
             </div>
-            <div class="w-full sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 bg-black p-8">2</div>
-            <div class="w-full sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 bg-black p-8">4</div> 
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-8">
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Email: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <div data-netlify-recaptcha="true"></div>
+                    <p>
+                        <button type=”submit”>Send</button>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
     </section>
