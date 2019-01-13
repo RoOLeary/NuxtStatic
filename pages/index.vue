@@ -167,9 +167,8 @@
                 </div>
             </div>
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8 pt-16" style="background-image: url('https://ronan-oleary.com/wp/wp-content/uploads/2019/01/img-ronan.jpg'); background-size: cover; background-position: center center;">
-                <img src="/assets/images/img-ronan.jpg" />
             </div>
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-red-dark p-8">2</div>
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-red-dark p-8">Contact Details</div>
         </div>
     </div>
     </section>
