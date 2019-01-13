@@ -171,7 +171,7 @@
                     <stromg>ALL</stromg> fields are required, and I'll never share your email with anyone. Swearsies.</p>
                 </p>
                 <br>
-                <form class="mb-6" name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true">
                     <div class="flex flex-col mb-4">
                         <label class="mb-2 text-white" for="name">Your Name *</label>
                         <input class="border py-2 px-3 text-grey-darkest" type="text" name="name" id="name" required>
