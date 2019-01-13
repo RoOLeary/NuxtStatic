@@ -168,9 +168,8 @@
                 <p class="text-white text-1xl">Leave your email and a brief hint as to the subject, and I may or may not get back to you</p>
                 <form class="w-full pt-4" name="contact" method="POST" data-netlify="true">
                     <div class="flex items-center border-b border-b-2 border-red-dark py-2">
-                        <input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your Email Here..." name="email" aria-label="Full name">
-                        <br>
-                        <input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your Message..." name="message" aria-label="Full name">
+                        <input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your Email Here..." name="email" aria-label="name">
+                        <input type="hidden" name="website-enquiry" value="Inquiry form" />
                         <br>
                         <button class="flex bg-red hover:bg-red-dark border-red hover:border-red-dark text-sm border-4 text-white py-1 px-2 rounded" type="button">
                         SEND
