@@ -29,8 +29,13 @@
  *
  * Example:
  *
- * .btn { ... }
- * .form-input { ... }
+*/
+
+.bl{
+    text-align: justify;
+}
+
+ /*
  *
  * Or if using a preprocessor or `postcss-import`:
  *

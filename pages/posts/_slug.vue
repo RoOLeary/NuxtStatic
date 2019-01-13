@@ -13,7 +13,7 @@
         <div class="flex self-center mx-auto">
             <div class="shergar md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 py-8"></div> 
             <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 mb-2 p-8 text-left">
-                <p class="leading-loose">{{ body }}</p>
+                <p class="leading-loose bl">{{ body }}</p>
                 <br>
                 <nuxt-link to='/' class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded no-underline">Home</nuxt-link>  
                 <nuxt-link to='/posts' class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded no-underline">All Posts</nuxt-link>  
@@ -68,6 +68,7 @@ export default {
       display: none;
     }
   }
+
   .container.postindex{
       background: #fff;
       min-height: 100vh;

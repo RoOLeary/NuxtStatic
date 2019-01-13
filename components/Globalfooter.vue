@@ -13,7 +13,7 @@
         data(){
             return{
                 credit: 'Danger Ro', 
-                year: '2019',
+                year: new Date().getFullYear()
                  
             }
         }

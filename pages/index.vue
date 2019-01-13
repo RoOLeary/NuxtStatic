@@ -3,10 +3,10 @@
         <div class="container w-full mx-auto header">
             <div data-aos="fade-up" data-aos-duration="4000">  
                 <h1 class="text-white pt-16 pl-4 pb-4 text-5xl ">
-                    DANGER RO
+                    DANGER <span class="text-red">RO</span>
                 </h1>
                 <h2 class="text-white pl-5 pb-4 text-2xl ">
-                    BAD-ASS WEB DEVELOPER
+                    BADASS CODER FROM OUTER SPACE
                 </h2>
                 <br>
                 <button @click="$store.commit('gethigh')" class="bg-red hover:bg-red-dark text-white py-4 px-4">LEARN MORE</button>
@@ -16,15 +16,17 @@
     </div>
     <div class="flex flex-col mx-auto">
         <div class="flex mt-2 mb-2 py-2 px-4">
-            <div class="w-full bg-white h-auto px-4 py-4" style="border: 1px solid black">
+            <div class="w-full bg-white h-auto px-4 pt-16 pb-2">
                 <div data-aos="fade-up" data-aos-duration="4000">  
-                    <h1 class="text-black text-center pl-4 pb-4 text-5xl ">
-                        PLEASE ALLOW ME TO INTRODUCE MYSELF...
+                    <h1 class="text-black text-center pl-4 pb-4 text-4xl ">
+                        PLEASE ALLOW ME TO INT<span class="text-red">RO</span>DUCE MYSELF...
                     </h1>
-                    <h2 class="text-black text-center pl-5 pb-4 text-2xl ">
-                        THIS IS ALSO SOME TEXT TO GO BENEATH THE LINE OF TEXT ABOVE<br>
-                        AND <em>THIS</em> IS ALSO SOME TEXT TO GO BENEATH THE LINE OF TEXT ABOVE
-                    </h2>
+                    <p class="text-black text-center pl-5 pb-4 text-2xl ">
+                        ...I'm a multidisciplined web developer with 9 years (and counting...) professional experience.<br>
+                        In actuality, I'm kind of like a web-dev "jack of <i>many</i> trades" - in that I know a little bit about lots of things, however, my specialities are mainly in the area 
+                        of CMS (i.e. PHP - Craft, WP, Laravel, Netlify) and javascript application development with Vue and occasionally React.
+                    <p class="text-black text-center pl-5 pb-4 text-2xl ">
+                        Welcome to my sort of portfolio, sort of rant-site</p>
                 </div>
             </div>
         </div>
@@ -32,7 +34,7 @@
         <!-- Two columns -->
        
         <div data-aos="fade-down" data-aos-duration="4000">
-            <h1 class="pt-8 pb-2 px-4 text-5xl">WORK</h1>
+            <h1 class="pt-8 pb-2 px-4 text-5xl text-center">BITS AND PIECES...</h1>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="4000">
@@ -42,13 +44,12 @@
                     
                     <div v-for="post in portfolio" :key="post.slug" @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
                         <img :src="post.thumbnail">
-                        <p>{{ post.title }}</p>
                     </div>
                 
                 </carousel>
              </no-ssr>
         </div>
-
+        <br><br>
         <no-ssr>
             <InputFocusModal />
         </no-ssr>
@@ -79,10 +80,10 @@
                 </div> 
             </div>
             
-           <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark p-12 text-left">
+           <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark p-12 text-center">
                 
                 <div data-aos="fade-left" data-aos-duration="4000">    
-                    <h1>People Say the Nicest Things...</h1>
+                    <h1 class="text-white">People Say the Nicest Things...</h1>
                     <no-ssr>
                         <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:1,nav:true}}">
                             <div class="quote">
@@ -116,14 +117,14 @@
         </div>
         <!-- Four columns -->
         <div data-aos="fade-down" data-aos-duration="4000">
-            <h1 class="pt-8 pb-2 px-4 text-5xl">LATEST POSTS</h1>
+            <h1 class="pt-8 pb-2 px-4 text-5xl text-center">LATEST POSTS</h1>
         </div>
         <div class="sm:flex flex-wrap md:flex-no-wrap px-2 py-2">
             <div v-for="post, index in posts" :key="post.slug" v-if="index < 3" class="sm:w-full md:w-1/3 rounded overflow-hidden shadow-lg m-2">
                 <img class="sm:w-full" src="http://www.fillmurray.com/800/490" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{ post.title }}</div>
-                    <p class="text-grey-darker text-base">
+                    <p class="text-grey-darker text-base bl">
                     {{ post.excerpt }}
                     </p>
                     <br>
@@ -139,15 +140,15 @@
 
         
         <div class="flex flex-wrap">
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red p-8">
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark px-16 py-16 ">
                 <div data-aos="fade-right" data-aos-duration="4000">  
-                    <h3 class="text-white text-3xl">Heard Enough?</h3>
-                    <h5 class="text-white text-1xl">Wanna grab a coffee and a maybe a cheeky number?</h5>
-                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum eligendi iste sit, cumque totam modi dignissimos hic esse. Beatae cumque labore quam facilis in, libero odio quaerat dolorem eligendi.</p>
+                    <h3 class="text-white text-3xl">Heard Enough? Wanna grab a coffee?</h3>
+                    <br>
+                    <p class="text-white tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
                 </div>
             </div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8">2</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8">4</div> 
+            <div class="w-full sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 bg-black p-8">2</div>
+            <div class="w-full sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 bg-black p-8">4</div> 
         </div>
     </div>
     </section>
