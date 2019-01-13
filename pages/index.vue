@@ -75,7 +75,7 @@
         </div>
          <div class="flex flex-col sm:flex-row w-full">
              
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-12 text-white text-left">
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-16 text-white text-left">
                 <div data-aos="fade-right" data-aos-duration="4000">  
                     <h1>Who The...?</h1>
                     <br>
