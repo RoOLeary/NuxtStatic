@@ -22,11 +22,13 @@
 import Post from '~/components/Post.vue'
 import axios from 'axios';
 export default {
+  layout: 'blog',
   head: { 
     title: 'POSTS'
   },
   
   data() {
+    
     return { 
       title: 'POSTS',
       posts: this.$store.state.posts

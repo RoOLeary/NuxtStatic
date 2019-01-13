@@ -3,7 +3,7 @@
         <div class="container w-full mx-auto header">
             <div data-aos="fade-up" data-aos-duration="4000">  
                 <h1 class="text-white pt-16 pl-4 pb-4 text-5xl ">
-                    JOLLY CARSON
+                    DANGER RO
                 </h1>
                 <h2 class="text-white pl-5 pb-4 text-2xl ">
                     BAD-ASS WEB DEVELOPER
@@ -127,7 +127,7 @@
                     {{ post.excerpt }}
                     </p>
                     <br>
-                    <nuxt-link :to="post._path" class="bg-red hover:bg-red-dark text-white py-2 px-2">Full Post</nuxt-link>
+                    <nuxt-link :to="post._path" class="bg-red hover:bg-red-dark text-white py-2 px-2 rounded">Read...</nuxt-link>
                 </div>
                 <div class="px-6 py-4">
                     <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#code</span>
@@ -138,18 +138,14 @@
         </div>
 
         
-        <div class="flex flex-row-reverse flex-wrap px-4">
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/2 mb-2 bg-grey p-8">1</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey-light p-8">2</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey p-8">3</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey-light p-8">4</div>
-        </div>
-
         <div class="flex flex-wrap px-4">
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/2 mb-2 bg-grey p-8">1</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey-light p-8">2</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey p-8">3</div>
-            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 mb-2 bg-grey-light p-8">4</div> 
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-2 bg-grey p-8">
+                <h3>Heard Enough?</h3>
+                <h5>Wanna grab a coffee and a maybe a cheeky number?</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum eligendi iste sit, cumque totam modi dignissimos hic esse. Beatae cumque labore quam facilis in, libero odio quaerat dolorem eligendi.</p>
+            </div>
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-2 bg-grey-light p-8">2</div>
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-2 bg-grey-light p-8">4</div> 
         </div>
     </div>
     </section>
@@ -162,7 +158,7 @@ import InputFocusModal from '~/components/Funny_Modal.vue'
 export default {
 
     head: {
-        title: 'Style page'
+        title: 'Danger Ro'
     },
   
     data() {

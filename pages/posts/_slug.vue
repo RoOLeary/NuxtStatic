@@ -1,6 +1,6 @@
 <template>
   <div>
-   
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
       <div class="container mx-auto postsindex mt-32 flex-col">
         <h1>{{ title }}</h1>
         <br>
@@ -15,41 +15,36 @@
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mb-2 p-8 text-left">
                 <p class="leading-loose">{{ body }}</p>
                 <br>
-                <nuxt-link to='/posts' class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded no-underline">Back to Posts</nuxt-link>  
+                <nuxt-link to='/' class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded no-underline">Home</nuxt-link>  
+                <nuxt-link to='/posts' class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded no-underline">All Posts</nuxt-link>  
+                <br><br><br>
+               
+
+                <no-ssr>  
+                  <social-sharing url="https://vuejs.org/"
+                    :title="title"
+                    :description="excerpt"
+                    :quote="excerpt"
+                    hashtags="vuejs,javascript,framework"
+                    twitter-user="ro_oleary"
+                    inline-template
+                    class="flex flex-row">
+                      <div>
+                        <network class="sm:w-full md:w-1/3 bg-facebook hover:bg-blue-dark text-white text-center font-bold py-2 px-4 mr-2 rounded no-underline nuxt-link-active" network="facebook">
+                          <i class="fa fa-facebook"></i> 
+                        </network>
+                        <network class="sm:w-full md:w-1/3 bg-twitter hover:bg-blue-dark text-white text-center font-bold py-2 px-4 mr-2 rounded no-underline nuxt-link-active" network="twitter">
+                          <i class="fa fa-twitter"></i> 
+                        </network>
+                        <network class="sm:w-full md:w-1/3 bg-linkedin hover:bg-blue-dark text-white text-center font-bold py-2 px-4 mr-2 rounded no-underline nuxt-link-active" network="linkedin">
+                          <i class="fa fa-linkedin"></i> 
+                        </network>
+                    </div>
+                  </social-sharing>
+              </no-ssr>
             </div> 
             <div class="sm:w-full md:w-1/4 lg:w-1/4 xl:w-1/4 mb-2 p-8"></div> 
-          </div>
-      </div>
-      <div class="flex self-center mx-auto">
-      <no-ssr>
-        
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
-      <social-sharing url="https://vuejs.org/"
-        :title="title"
-        :description="excerpt"
-        :quote="excerpt"
-        hashtags="vuejs,javascript,framework"
-        twitter-user="ro_oleary"
-        inline-template>
-          <div>
-            <network network="facebook">
-              <i class="fa fa-facebook"></i> Facebook
-            </network>
-            <network network="linkedin">
-              <i class="fa fa-linkedin"></i> LinkedIn
-            </network>
-            <network network="reddit">
-              <i class="fa fa-reddit"></i> Reddit
-            </network>
-            <network network="twitter">
-              <i class="fa fa-twitter"></i> Twitter
-            </network>
-            <network network="whatsapp">
-              <i class="fa fa-whatsapp"></i> Whatsapp
-            </network>
-        </div>
-      </social-sharing>
-    </no-ssr>
+        </div>  
     </div>
   </div>
 </template>
@@ -68,11 +63,12 @@ export default {
 
 <style scoped>
 
-  .container{
+  .container.postindex{
       background: #fff;
       min-height: 100vh;
       min-width: 100vw;
   }
+
 
   h1, a{
     font-weight: bold;

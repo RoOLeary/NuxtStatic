@@ -2,15 +2,18 @@
   <div>
     <globalnav />
     <nuxt/>
+    <globalfooter />
   </div>
 </template>
 
 
 <script>
 import Globalnav from '~/components/Globalnav.vue';
+import Globalfooter from '~/components/Globalfooter.vue';
 export default {
   components: {
-    Globalnav
+    Globalnav,
+    Globalfooter
   }
 }
 </script>
