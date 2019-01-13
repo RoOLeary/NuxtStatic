@@ -100,7 +100,7 @@
            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark p-16 text-center">
                 
                 <div data-aos="fade-left" data-aos-duration="4000">    
-                    <h1 class="text-white text-center mb-4">People Say the Nicest Things...</h1>
+                    <h1 class="text-white text-center mb-8">People Say the Nicest Things...</h1>
                     <no-ssr>
                         <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:1,nav:true}}">
                             <div class="quote">
