@@ -98,10 +98,10 @@
             </div>
             
            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark p-16 text-center">
-                <no-ssr>
+               
                 <div data-aos="fade-left" data-aos-duration="4000">    
                     <h1 class="text-white text-center mb-8">People Say the Nicest Things...</h1>
-                   
+                        <no-ssr>
                         <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:1,nav:true}}">
                             <div class="quote">
                                 <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>“Ronan was a pleasure to deal with. He took the time to understand what our business, and developed a site which was the perfect solution for us. Ronan was professional, honest, and transparent from the word go. I would have no hesitation in ever recommending Ronan for any project” </em></blockquote>
@@ -128,10 +128,9 @@
                                 <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                         </carousel>
-                    
+                    </no-ssr>
                 </div>
             </div>
-            </no-ssr>
         </div>
         <!-- Four columns -->
         <div data-aos="fade-down" data-aos-duration="4000">
