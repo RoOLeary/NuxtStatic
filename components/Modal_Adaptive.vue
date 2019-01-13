@@ -1,42 +1,21 @@
 <template>
 <modal name="demo-login" transition="pop-out" :width="modalWidth" :height="400">
-  <div class="box">
-    <div class="box-part" id="bp-left">
-      <div class="partition" id="partition-register">
-        <button @click="$modal.hide('demo-login')">
-        ❌
-      </button>
-        <div class="partition-title">MODAL WINDOW {{ this.$props.scud }}</div>
-        <div class="partition-form">
-          <form autocomplete="false">
-
-            <div class="autocomplete-fix">
-              <input type="password">
-            </div>
-
-            <input id="n-email" type="text" placeholder="Email">
-            <input id="n-username" type="text" placeholder="Username">
-            <input id="n-password2" type="password" placeholder="Password">
-          </form>
-
-          <div style="margin-top: 42px">
-          </div>
-
-          <div class="button-set">
-            <button id="goto-signin-btn">Sign In</button>
-            <button id="register-btn">Register</button>
-          </div>
-
-          <button class="large-btn github-btn">connect with <span>github</span></button>
-          <button class="large-btn facebook-btn">connect with <span>facebook</span></button>
-        </div>
-      </div>
-    </div>
-    <div class="box-part" id="bp-right">
-      <div class="box-messages">
-      </div>
-    </div>
-  </div>
+  <button @click="$modal.hide('demo-login')">
+    ❌
+  </button>
+  <form name="contact" method="POST" data-netlify="true">
+      <p>
+          <label>Email: <input type="text" name="name" /></label>
+      </p>
+      <p>
+          <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <div data-netlify-recaptcha="true"></div>
+      <p>
+          <button type=”submit”>Send</button>
+      </p>
+  </form>
+  
 </modal>
 </template>
 <script>
