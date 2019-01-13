@@ -27,7 +27,8 @@
                         In actuality, I'm kind of like a web-dev "jack of <i>many</i> trades" - in that I know a little bit about loads of stuff, but my specialities are mainly in the area 
                         of CMS (i.e. PHP - Craft, WP, Laravel, Netlify) and javascript application development with Vue and occasionally React.
                     <p class="text-black text-center pl-5 pb-4 text-2xl px-16 leading-loose">
-                        Welcome to my sort of portfolio, sort of rant-site</p>
+                        Welcome to my sort of portfolio, sort of rant-site. Previous iterations were always Craft, WP or (ugh) ExpressionEngine, but this one was
+                        hand made with VueJS, Nuxt and the awesome Netlify</p>
                 </div>
             </div>
         </div>
