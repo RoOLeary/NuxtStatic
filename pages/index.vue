@@ -6,10 +6,11 @@
                     DANGER <span class="text-red">RO</span>
                 </h1>
                 <h2 class="text-white pl-5 pb-4 text-2xl ">
-                    BADASS CODER FROM OUTER SPACE
+                    BUILDER OF THINGS DIGITAL
                 </h2>
                 <br>
                 <button @click="$store.commit('gethigh')" class="bg-red hover:bg-red-dark text-white py-4 px-4">LEARN MORE</button>
+                <button @click="$store.commit('gethigh')" class="bg-red hover:bg-red-dark text-white py-4 px-4">LATEST POSTS</button>
 
             </div>
         <br>
@@ -21,11 +22,11 @@
                     <h1 class="text-black text-center pl-4 pb-4 text-4xl ">
                         PLEASE ALLOW ME TO INT<span class="text-red">RO</span>DUCE MYSELF...
                     </h1>
-                    <p class="text-black text-center pl-5 pb-4 text-2xl ">
+                    <p class="text-black text-center pl-5 pb-4 text-2xl px-16 leading-loose">
                         ...I'm a multidisciplined web developer with 9 years (and counting...) professional experience.<br>
-                        In actuality, I'm kind of like a web-dev "jack of <i>many</i> trades" - in that I know a little bit about lots of things, however, my specialities are mainly in the area 
+                        In actuality, I'm kind of like a web-dev "jack of <i>many</i> trades" - in that I know a little bit about loads of stuff, but my specialities are mainly in the area 
                         of CMS (i.e. PHP - Craft, WP, Laravel, Netlify) and javascript application development with Vue and occasionally React.
-                    <p class="text-black text-center pl-5 pb-4 text-2xl ">
+                    <p class="text-black text-center pl-5 pb-4 text-2xl px-16 leading-loose">
                         Welcome to my sort of portfolio, sort of rant-site</p>
                 </div>
             </div>
@@ -35,11 +36,12 @@
        
         <div data-aos="fade-down" data-aos-duration="4000">
             <h1 class="pt-8 pb-2 px-4 text-5xl text-center">BITS AND PIECES...</h1>
+            <h3 class="pt-8 pb-2 px-4 text-2xl text-center">Here are some of the organisations for whom I have worked</h3>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="4000">
              <no-ssr>
-                <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:6,nav:true}}">
+                <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:3,nav:true}}">
                     
                     
                     <div v-for="post in portfolio" :key="post.slug" @click="$store.commit('isStylin')" v-bind:class="[ stylin ? 'border border-red' : '']">
@@ -80,35 +82,35 @@
                 </div> 
             </div>
             
-           <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark p-12 text-center">
+           <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark p-16 text-center">
                 
                 <div data-aos="fade-left" data-aos-duration="4000">    
-                    <h1 class="text-white">People Say the Nicest Things...</h1>
+                    <h1 class="text-white text-center mb-4">People Say the Nicest Things...</h1>
                     <no-ssr>
                         <carousel :dots="true" :nav="false" :responsive="{0:{items:1,nav:true},600:{items:1,nav:true}}">
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>“Ronan was a pleasure to deal with. He took the time to understand what our business, and developed a site which was the perfect solution for us. Ronan was professional, honest, and transparent from the word go. I would have no hesitation in ever recommending Ronan for any project” </em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                             <div class="quote">
-                                <blockquote><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
+                                <blockquote class="tracking-wide leading-loose px-12 sm:px-4 "><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam nemo adipisci, voluptas commodi similique quis tempore a, ratione ipsa saepe provident earum est quidem?</em></blockquote>
                             </div>
                         </carousel>
                     </no-ssr>
@@ -142,7 +144,7 @@
         <div class="flex flex-wrap">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-red-dark px-16 py-16 ">
                 <div data-aos="fade-right" data-aos-duration="4000">  
-                    <h3 class="text-white text-3xl">Heard Enough? Wanna grab a coffee?</h3>
+                    <h3 class="text-white text-3xl">Heard enough? Wanna grab a coffee?</h3>
                     <br>
                     <p class="text-white tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
                 </div>
@@ -235,6 +237,10 @@ a{
   min-height: 100vh;
   min-width: 100vw;
   padding-top: 200px;
+}
+
+blockquote{
+    color: #fff; 
 }
 </style>
 
