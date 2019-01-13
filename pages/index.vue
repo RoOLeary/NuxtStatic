@@ -77,7 +77,7 @@
              
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-12 text-white text-left">
                 <div data-aos="fade-right" data-aos-duration="4000">  
-                    <h1>About Me</h1>
+                    <h1>Who The...?</h1>
                     <br>
                     <p class="text-white leading-normal bl">Hi, I'm Ronan, a Web Developer from Dublin, based in Amsterdam. I build websites using Craft, WordPress, Vue and other goodies.
                         When not coding, I'm either watching Liverpool FC, or thinking about coding.
