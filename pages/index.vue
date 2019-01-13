@@ -77,9 +77,23 @@
              
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 bg-black p-12 text-white text-left">
                 <div data-aos="fade-right" data-aos-duration="4000">  
-                    <h1>Title</h1>
+                    <h1>About Me</h1>
                     <br>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus veritatis, minima soluta est aut. Sunt quibusdam quaerat quae est voluptates exercitationem. Cum sequi nam porro exercitationem! Et, quis quibusdam?</p>
+                    <p class="text-white leading-normal">Hi, I'm Ronan, a Web Developer from Dublin, based in Amsterdam. I build websites using Craft, WordPress, Vue and other goodies.
+                        When not coding, I'm either watching Liverpool FC, or thinking about coding.
+                    </p>
+                    <br>
+                    <h3>Development</h3>
+                    <br>
+                    <p class="text-white leading-normal">I have developed websites, frameworks, apps and features for numerous Web Development agencies, Ad agencies, CMS providers, Event Companies and online media publications.
+                        I have over 9 years experience in multi-faceted development and cross functional technical departments in some big-name players. Put it this way, a <strong>lot</strong> of people have seen my work.
+                    </p>
+                    <br>
+                    <h3>Consultancy</h3>
+                    <br>
+                    <p class="text-white leading-normal">Part of the joy of this profession, is sharing the benefit of my experience with others....for a price. Maybe you need an assessment or consultation with someone who knows what they're doing and how to do it. Look no further, Ol' Danger Ro's got ya. <span class="text-2xl pt-4 align-middle">&#128521</span>
+                    </p>
+
                 </div> 
             </div>
             
@@ -120,7 +134,7 @@
         </div>
         <!-- Four columns -->
         <div data-aos="fade-down" data-aos-duration="4000">
-            <h1 class="pt-8 pb-2 px-4 text-5xl text-center">LATEST POSTS</h1>
+            <h1 class="pt-12 pb-4 px-4 text-5xl text-center">LATEST POSTS</h1>
         </div>
         <div class="sm:flex flex-wrap md:flex-no-wrap px-2 py-2">
             <div v-for="post, index in posts" :key="post.slug" v-if="index < 3" class="sm:w-full md:w-1/3 rounded overflow-hidden shadow-lg m-2">
