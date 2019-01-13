@@ -79,19 +79,19 @@
                 <div data-aos="fade-right" data-aos-duration="4000">  
                     <h1>About Me</h1>
                     <br>
-                    <p class="text-white leading-normal">Hi, I'm Ronan, a Web Developer from Dublin, based in Amsterdam. I build websites using Craft, WordPress, Vue and other goodies.
+                    <p class="text-white leading-normal bl">Hi, I'm Ronan, a Web Developer from Dublin, based in Amsterdam. I build websites using Craft, WordPress, Vue and other goodies.
                         When not coding, I'm either watching Liverpool FC, or thinking about coding.
                     </p>
                     <br>
                     <h3>Development</h3>
                     <br>
-                    <p class="text-white leading-normal">I have developed websites, frameworks, apps and features for numerous Web Development agencies, Ad agencies, CMS providers, Event Companies and online media publications.
+                    <p class="text-white leading-normal bl">I have developed websites, frameworks, apps and features for numerous Web Development agencies, Ad agencies, CMS providers, Event Companies and online media publications.
                         I have over 9 years experience in multi-faceted development and cross functional technical departments in some big-name players. Put it this way, a <strong>lot</strong> of people have seen my work.
                     </p>
                     <br>
                     <h3>Consultancy</h3>
                     <br>
-                    <p class="text-white leading-normal">Part of the joy of this profession, is sharing the benefit of my experience with others....for a price. Maybe you need an assessment or consultation with someone who knows what they're doing and how to do it. Look no further, Ol' Danger Ro's got ya. <span class="text-2xl pt-4 align-middle">&#128521</span>
+                    <p class="text-white leading-normal bl">Part of the joy of this profession, is sharing the benefit of my experience with others....for a price. Maybe you need an assessment or consultation with someone who knows what they're doing and how to do it. Look no further, Ol' Danger Ro's got ya. <span class="text-2xl pt-4 align-middle">&#128521</span>
                     </p>
 
                 </div> 
