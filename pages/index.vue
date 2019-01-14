@@ -163,12 +163,12 @@
                     <br>
                     <h3 class="text-white text-3xl">Wanna grab a coffee?</h3>
                     <br>
-                    <p class="text-white text-2xl tracking-wide leading-tight">I am available to discuss Web Consultancy and Development services. Introductory chat is free as a dickie bird...then we'll talk.</p>
+                    <p class="text-white text-2xl tracking-wide leading-tight">I am available to discuss Web Consultancy and Web Development services.                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis dolor atque tenetur totam non perspiciatis illo similique quis neque.</p>
                 </div>
             </div>
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-black p-8 pt-16" style="background-image: url('https://ronan-oleary.com/wp/wp-content/uploads/2019/01/img-ronan.jpg'); background-size: cover; background-position: center center;">
             </div>
-            <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-red-dark p-8">Contact Details</div>
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 bg-red-dark p-8">Contact Details | Social yada yada yada</div>
         </div>
     </div>
     </section>
