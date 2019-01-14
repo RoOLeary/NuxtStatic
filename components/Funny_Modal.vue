@@ -11,7 +11,6 @@
       class="ct-top-right"
       @click="$modal.hide('dog-profile')"
     >
-      FALLOW DE DAG
     </div>
     <img src="https://media.giphy.com/media/xB1RqLGoBNh3W/giphy.gif" />
   </modal>
